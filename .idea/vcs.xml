@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Project_Flashcards" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/channelmanager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/react-practice" vcs="Git" />
+  </component>
+</project>
