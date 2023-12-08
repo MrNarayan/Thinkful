@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Meet Jobby the Indeed penguin</title>
+        <link rel="stylesheet" href="jobby.css">
+    </head>
+    <header>
+        <h1 class="main_header">
+            Hi, I'm Jobby, the <em>search engine penguin</em>
+        </h1>
+        <img src="twitterJobby.png" alt="Twitter Jobby" width="100" height="100">
+    </header>
+    <body>
+        <p id="jobby_intro">
+            <b>I love Indeed</b> and you can find me on Indeed’s search result pages and while editing your resume starting today! You can also find me on Twitter <a href="https://twitter.com/jobbysearcher">@jobbysearcher</a>
+        </p>
+        <h2 id="jobby_data_header">Get to know Jobby</h2>
+        <div class="misc_jobby_data">
+            <p class="job_postings"><b>Jobby's Top 10 favorite job postings:</b></p>
+            <ol class="jobby_jobs">
+                <li>Product director, 📍 Austin, TX</li>
+                <li>Sr QA Engineer, 📍 Remote, US</li>
+                <li>Staff Software Engineer, 📍 Remote, US</li>
+                <li>Associate Manager, 📍 Boston, MA</li>
+                <li>UX Designer, 📍 Seattle, WA</li>
+                <li>Automation Engineer, 📍 Remote, US</li>
+                <li>Sales Engineer, 📍 San Francisco, CA</li>
+                <li>Warehouse Associate, 📍 Los Angeles, CA</li>
+                <li>Team Leader, 📍 New York, NY</li>
+                <li>Marine biologist, 📍 Miami, FL</li>
+            </ol>
+            <p class="learn_more"><b>Learn a little more about Jobby:</b></p>
+            <ul class="jobby_favorites">
+                <li>Favorite color: <b><em>blue</em></b></li>
+                <li>Favorite food: <b><em>krill</em></b></li>
+                <li>Favorite musical intrument: <b><em>ukulele</em></b></li>
+                <li>Favorite movie: <b><em>any from Rising Voices</em></b></li>
+            </ul>
+        </div>
+        <table id="penguin_info">
+            <tr>
+                <th>Types of penguins</th>
+                <th>What they eat</th>
+                <th>Where they live</th>
+            </tr>
+            <tr>
+                <td>Rockhopper</td>
+                <td>Krill</td>
+                <td>Antarctica</td>
+            </tr>
+            <tr>
+                <td>Emperor</td>
+                <td>Squid</td>
+                <td>South Africa</td>
+            </tr>
+        </table>
+        <div class="jobby_images">
+            <h3>A glamour shot of Jobby and an Emperor penguin for comparison!</h3>
+            <img src="facebookJobby.png" alt="Facebook Jobby" width="300" height="300">
+            <img src="emperorPenguin.png" alt="Emperor Penguin" width="300" height="300">
+        </div>
+        <h4>A little information about an Indeed product from Jobby</h4>
+        <p class="product_quote">
+            “I like Virtual Hiring Events. You can meet candidates face to face without the restrictions of a physical space.
+            You can scale your virtual events to meet all of your hiring needs.”
+        </p>
+        <p class="quote">
+            “Jobby helps people like you get jobs.” - Chris Hyams <em>Indeed, CEO</em>
+        </p>
+        <ul class="links">
+            <h3>Follow these links to learn more about penguins:</h3>
+            <li><a href="https://www.aquarium.co.za/blog/entry/26-types-of-penguin-the-cutest-list-on-the-internet">Types of penguins</a></li>
+            <li><a href="https://www.worldanimalprotection.us/blogs/10-facts-about-penguins">10 Penguin facts</a></li>
+            <li><a href="https://nomadparadise.com/best-places-to-see-penguins/">Best places to see penguins</a></li>
+        </ul>
+        <h2>Ask Jobby a question!</h2>
+        <!-- Fake action link for submit -->
+        <!-- The autocomplete is set to on which will help users with their questions -->
+        <form id="submit_question" action="/action_page.php" autocomplete="on">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" style="width:300px;"><br>
+            <label for="question">Ask Jobby a question:</label><br>
+            <input type="text" id="question" name="question" style="width:500px;height:200px;"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

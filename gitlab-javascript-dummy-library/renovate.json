@@ -1,0 +1,36 @@
+{
+    "extends": [
+        "helpers:disableTypesNodeMajor"
+    ],
+    "commitMessageExtra": "from v{{{currentVersion}}} to {{#if isMajor}}v{{{newMajor}}}{{else}}{{#if isSingleVersion}}v{{{newVersion}}}{{else}}{{{newValue}}}{{/if}}{{/if}}",
+    "packageRules": [
+        {
+            "groupName": "type packages",
+            "matchPackagePrefixes": ["@types"]
+        },
+        {
+            "groupName": "unit test packages",
+            "extends": ["packages:jsUnitTest"]
+        },
+        {
+            "groupName": "lint packages",
+            "extends": ["packages:linters"]
+        },
+        {
+            "groupName": "jest packages",
+            "extends": [":disableMajorUpdates"],
+            "matchPackageNames": [
+                "@types/jest",
+                "jest",
+                "ts-jest"
+            ]
+        },
+        {
+            "groupName": "webpack packages",
+            "matchPackagePatterns": [
+                "^@types/webpack.*",
+                "^webpack.*"
+            ]
+        }
+    ]
+}

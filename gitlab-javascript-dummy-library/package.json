@@ -1,0 +1,52 @@
+{
+    "name": "@indeed/pipeline-gitlab-javascript-dummy-library",
+    "version": "3.0.3",
+    "description": "Gitlab Javascript Dummy Library",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "config",
+        "dist",
+        "src"
+    ],
+    "scripts": {
+        "check": "cns ts-check --project tsconfig.json",
+        "clean": "rm -rf dist",
+        "prebuild": "npm run clean",
+        "build": "cns ts-build --project tsconfig.build.json",
+        "lint": "npm run lint-js && npm run lint-ts",
+        "lint-js": "cns lint-js . --cache",
+        "lint-ts": "cns lint-ts src/**",
+        "lint:fix": "npm run lint-js -- --fix && npm run lint-ts -- --fix",
+        "prepackage": "npm ci && npm run build",
+        "package": "npm pack",
+        "quality": "npm run lint && npm run check && npm run test",
+        "prerelease": "npm ci && npm run build && npm run quality",
+        "release": "npm version",
+        "postrelease": "git push --follow-tags",
+        "pretest": "npm run clean",
+        "test": "cns test",
+        "test:watch": "cns test --watch --no-coverage",
+        "ts-doc": "cns doc-tsdoc src",
+        "preversion": "npm run preversion:contributors",
+        "preversion:contributors": "contributors && git add package.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@code.corp.indeed.com:pipeline/gitlab-javascript-dummy-library.git"
+    },
+    "keywords": [
+        "nodejs"
+    ],
+    "publishConfig": {
+        "@indeed:registry": "http://localhost:8080/nexus/repository/npm-internal/"
+    },
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "@indeed/node-common-npm-scripts": "^13.0.11",
+        "@indeed/node-pipeline-utils": "^1.0.3",
+        "@mocha/contributors": "^1.0.3",
+        "@types/jest": "^25.2.3",
+        "@types/node": "^14.17.5"
+    }
+}

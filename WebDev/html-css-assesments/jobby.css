@@ -1,0 +1,107 @@
+* {
+  font-family: sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5%;
+  padding-bottom: 10px;
+}
+
+#jobby_intro {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 55px;
+  padding: 5px;
+  border: 1px dotted black;
+  background-color: white;
+}
+
+h2 {
+  padding-top: 50px;
+  padding-left: 450px;
+  font-family: Tahoma;
+  text-decoration: underline wavy powderblue 3px;
+}
+
+.jobby_jobs, .jobby_favorites {
+  display: inline-block;
+  padding-right: 40px;
+  padding-bottom: 50px;
+}
+
+div p.job_postings, p.learn_more {
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.misc_jobby_data {
+  display: flex;
+}
+
+.jobby_favorites{
+  padding-top: 5px;
+}
+
+ul li a:visited {
+  color: orange;
+}
+
+#penguin_info {
+  border-collapse: collapse;
+  margin: 50px 20px 100px 50px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 1200px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#penguin_info th {
+  background-color: #3792cb;
+  color: #ffffff;
+  text-align: left;
+}
+
+#penguin_info th, #penguin_info td {
+  padding: 12px 5px;
+}
+
+.jobby_images {
+  padding-left: 300px;
+  padding-bottom: 25px;
+}
+
+form {
+  padding-left: 325px;
+  padding-top: 25px;
+}
+
+.links {
+  text-align: center;
+  display: table;
+  list-style-position: inside;
+  margin: 0 310px;
+  width: 500px;
+  height: 200px;
+  padding: 30px 25px 0 25px;
+  border: 2px dotted black;
+  background-color: white;
+}
+
+.quote {
+  padding-bottom: 40px;
+}
+
+h4, .product_quote, .quote {
+  padding-left: 50px;
+}
